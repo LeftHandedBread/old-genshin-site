@@ -1,0 +1,85 @@
+@font-face {
+  font-family: genshin-font;
+  src: url(../fonts/ja-jp.ttf);
+}
+
+.icons-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.icons-parent a {
+  text-decoration: none;
+}
+
+.icon-container {
+  width: 16rem;
+  height: 16rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.icon {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 0px;
+  -webkit-transition: margin-bottom 250ms ease-out;
+  transition: margin-bottom 250ms ease-out;
+  margin-top: auto;
+}
+
+.icon-container:hover > .icon {
+  margin-bottom: 2rem;
+}
+
+.icon-underline {
+  margin-top: .5rem;
+  height: 0.25rem;
+  background-color: var(--text);
+  border-radius: 2px;
+  width: 0px;
+  -webkit-transition: width 250ms ease-out;
+  transition: width 250ms ease-out;
+}
+
+.icon-container:hover > .icon-underline {
+  width: 8rem;
+}
+
+.icon-text {
+  color: transparent;
+  font-family: genshin-font;
+  -webkit-transition: color 250ms ease-out;
+  transition: color 250ms ease-out;
+}
+
+.icon-text p {
+  font-size: 1.75rem;
+  margin: 0px;
+  margin-top: 0.5em;
+}
+
+.icon-container:hover > .icon-text {
+  color: var(--text-highlight);
+}
+/*# sourceMappingURL=animated-icon.css.map */

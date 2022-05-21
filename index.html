@@ -1,146 +1,96 @@
 <!DOCTYPE html>
 <html lang="en" class="green">
- <header>
-   <link rel="stylesheet" href="styles/index-style.css">
-      <div class="header-child-1">
-        <button id="theme" class="theme-btn green" onclick="setTheme('green');setLogoGreen()" title="Sumeru">
-        </button>
-        <button id="theme" class="theme-btn light" onclick="setTheme('light');setLogoBlack()" title="Light">
-        </button>
-        <button id="theme" class="theme-btn dark" onclick="setTheme('dark');setLogoGold()" title="Dark">
-        </button>
-        <button id="theme" class="theme-btn oled" onclick="setTheme('oled');setLogoWhite()" title="Oled">
-        </button>
-      </div>
-      <div class="header-child-2"> 
-        <a href="index.html">
-          <img id="logo" src="images/logo-green.svg">
-        </a>
-      </div>
-      <div class="header-child-3">
-        <input type="text" name="search" placeholder="Search">
-      </div>
- </header>
- <body>
-  <div class="body-parent">
-<!-- PAGE CONTENT -->
-  <div class="title">
-    <h1>Welcome to GenshinPlace!</h1>
-  </div>
-    <div class="quick-nav">
-      <a href="wiki-template.html">
-        <div class="quick-nav-item">
-          <div class="quick-nav-item-image">
-              <img id="icon" src="images/lore.png"/> 
-          </div>
-          <div class="quick-nav-item-text">
-            <h1>Lore</h1>
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenshinPlace</title>
+    <link rel="stylesheet" href="styles/index-style.css">
+</head>
+<body>
+    <div class="master">
+        <div class="logo">
+            <a href="index.html"><img id="logo" src='images/logos/logo-green.svg'></a>
         </div>
-      </a>
-      <a href="wiki-template.html">
-        <div class="quick-nav-item">
-          <div class="quick-nav-item-image">
-              <img id="icon" src="images/theories.png"/> 
-          </div>
-          <div class="quick-nav-item-text">
-            <h1>Theories</h1>
-          </div>
+        <div class="body">
+            <div class="page-title">
+                <div class=theme-btn>
+                    <button id="theme" class="theme-btn green" onclick="setTheme('green');setThemeGreen()" title="Sumeru">
+                    </button>
+                    <button id="theme" class="theme-btn light" onclick="setTheme('light');setThemeLight()" title="Light">
+                    </button>
+                    <button id="theme" class="theme-btn dark" onclick="setTheme('dark');setThemeDark()" title="Dark">
+                    </button>
+                </div> 
+                <h1>Welcome to GenshinPlace</h1>
+            </div>
+            <div class="icons-parent">
+                <a href="index.html">
+                    <div class="icon-container">
+                        <div class="icon"><img src="images/landing-icons/lore.svg"></div>
+                        <div class="icon-underline"></div>
+                        <div class='icon-text'><p>Lore</p></div>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <div class="icon-container">
+                        <div class="icon"><img src="images/landing-icons/lore.svg"></div>
+                        <div class="icon-underline"></div>
+                        <div class='icon-text'><p>Theories</p></div>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <div class="icon-container">
+                        <div class="icon"><img src="images/landing-icons/lore.svg"></div>
+                        <div class="icon-underline"></div>
+                        <div class='icon-text'><p>Forum</p></div>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <div class="icon-container">
+                        <div class="icon"><img src="images/landing-icons/lore.svg"></div>
+                        <div class="icon-underline"></div>
+                        <div class='icon-text'><p>Events</p></div>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <div class="icon-container">
+                        <div class="icon"><img src="images/landing-icons/lore.svg"></div>
+                        <div class="icon-underline"></div>
+                        <div class='icon-text'><p>Discord</p></div>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <div class="icon-container">
+                        <div class="icon"><img src="images/landing-icons/lore.svg"></div>
+                        <div class="icon-underline"></div>
+                        <div class='icon-text'><p>About</p></div>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <div class="icon-container">
+                        <div class="icon"><img src="images/landing-icons/lore.svg"></div>
+                        <div class="icon-underline"></div>
+                        <div class='icon-text'><p>r/place</p></div>
+                    </div>
+                </a>
+                <a href="index.html">
+                    <div class="icon-container">
+                        <div class="icon"><img src="images/landing-icons/lore.svg"></div>
+                        <div class="icon-underline"></div>
+                        <div class='icon-text'><p>Donate</p></div>
+                    </div>
+                </a>
+            </div>
+            <div class="content-divide">
+                <h1><center>News</center></h1>
+                <p>there is some pretty cool news here and it looks really epic and cool</p>
+            </div>
         </div>
-      </a>
-      <a href="wiki-template.html">
-        <div class="quick-nav-item">
-          <div class="quick-nav-item-image">
-              <img id="icon" src="images/leaks.png"/> 
-          </div>
-          <div class="quick-nav-item-text">
-            <h1>Leaks</h1>
-          </div>
+        <div class="foot-logo">
+            <img id="foot-logo" src="images/logos/foot-logo-green.svg">
         </div>
-      </a>
-      <a href="forum/forum.html">
-        <div class="quick-nav-item">
-          <div class="quick-nav-item-image">
-              <img id="icon" src="images/forum.png"/> 
-          </div>
-          <div class="quick-nav-item-text">
-            <h1>Forum</h1>
-          </div>
-        </div>
-      </a>
-      <a href="events.html">
-        <div class="quick-nav-item">
-          <div class="quick-nav-item-image">
-              <img id="icon" src="images/events.png"/> 
-          </div>
-          <div class="quick-nav-item-text">
-            <h1>Events</h1>
-          </div>
-        </div>
-      </a>
-      <a href="rplace.html">
-        <div class="quick-nav-item">
-          <div class="quick-nav-item-image">
-              <img id="icon" src="images/place.png"/> 
-          </div>
-          <div class="quick-nav-item-text">
-            <h1>r/place</h1>
-          </div>
-        </div>
-      </a>
-      <a href="discord.gg/sumeru">
-        <div class="quick-nav-item">
-          <div class="quick-nav-item-image" >
-              <img id="icon" src="images/discord.svg"/> 
-          </div>
-          <div class="quick-nav-item-text">
-            <h1>Discord</h1>
-          </div>
-        </div>
-      </a>
-      <a href="about.html">
-        <div class="quick-nav-item">
-          <div class="quick-nav-item-image">
-              <img id="icon" src="images/about.png"/> 
-          </div>
-          <div class="quick-nav-item-text">
-            <h1>About</h1>
-          </div>
-        </div>
-      </a>
-      <a href="donate.html">
-        <div class="quick-nav-item">
-          <div class="quick-nav-item-image">
-              <img id="icon" src="images/donate.png"/> 
-          </div>
-          <div class="quick-nav-item-text">
-            <h1>Donate</h1>
-          </div>
-        </div>
-      </a>
     </div>
-    <div class="subtitle">
-      <h1>News</h1>
-    </div>
-    <div>
-      <p>|</p>
-      <p>|</p>
-      <p>|</p>
-      <p>|</p>
-      <p>|</p>
-      <p>|</p>
-      <p>|</p>
-      <p>|</p>
-      <p>|</p>
-      <p>|</p>
-      <p>|</p>
-      <p>|</p>
-      <p>|</p>
-    </div>
-<!-- END PAGE CONTENT -->
-  </div>
- </body>
- <footer>
-   <img id="foot-logo" src="images/foot-logo-green.svg">
- </footer>
- <script src="scripts/script.js" type="text/javascript"></script>
+</body>
+<script src="scripts/script.js" type="text/javascript"></script>
+</html>

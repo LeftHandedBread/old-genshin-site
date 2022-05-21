@@ -1,0 +1,66 @@
+@font-face {
+    font-family: genshin-font;
+    src: url(../fonts/ja-jp.ttf);
+}
+
+.icons-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    a {
+        text-decoration: none;
+    }
+}
+
+.icon-container {
+    width: 16rem;
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icon {
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 0px;
+    transition: margin-bottom 250ms ease-out;
+    margin-top: auto;
+}
+
+.icon-container:hover > .icon {
+    margin-bottom: 2rem;
+
+}
+
+.icon-underline {
+    margin-top: .5rem;
+    height: 0.25rem;
+    background-color: var(--text);
+    border-radius: 2px;
+    width: 0px;
+    transition: width 250ms ease-out;
+}
+
+.icon-container:hover > .icon-underline {
+    width: 8rem;
+}
+
+.icon-text {
+    color: transparent;
+    font-family: genshin-font;
+    transition: color 250ms ease-out;
+    p {
+        font-size: 1.75rem;
+        margin: 0px;
+        margin-top: 0.5em;
+    }
+    
+}
+
+.icon-container:hover > .icon-text {
+    color: var(--text-highlight);
+}
+

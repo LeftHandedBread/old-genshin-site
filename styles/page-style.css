@@ -1,0 +1,133 @@
+@font-face {
+  font-family: genshin-font;
+  src: url(../fonts/ja-jp.ttf);
+}
+
+:root.green {
+  --text: #24221D;
+  --text-highlight: #2f3d16;
+  --text-light: #A0B596;
+  --body-bg: #EAE2B6;
+  --body-accent: #A3A745;
+  --background: #558776;
+}
+
+:root.light {
+  --text: #000000;
+  --text-highlight: #181D31;
+  --text-light: #40535A;
+  --body-bg: #F0E9D2;
+  --body-accent: #678983;
+  --background: #E6DDC4;
+}
+
+:root.dark {
+  --text: #FFFFFF;
+  --text-highlight: #ECB365;
+  --text-light: #83A3B1;
+  --body-bg: #04364D;
+  --body-accent: #042940;
+  --background: #041C32;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.master {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.logo {
+  width: 25%;
+  margin: 2rem;
+  -webkit-animation: intro1 4s;
+          animation: intro1 4s;
+}
+
+.body {
+  -webkit-animation: intro2 5.25s;
+          animation: intro2 5.25s;
+  width: 75%;
+  background-color: var(--body-bg);
+  border-radius: 2rem;
+  font-family: genshin-font;
+}
+
+.theme-btn {
+  text-align: right;
+  padding: 0.5rem;
+}
+
+.theme-btn button {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.125rem;
+  border-radius: 1rem;
+}
+
+.page-title {
+  text-align: center;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0px;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  background-color: var(--body-accent);
+  -webkit-box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.125);
+          box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.125);
+}
+
+.page-title h1 {
+  color: var(--text-highlight);
+  text-align: center;
+  margin-top: 0px;
+}
+
+.content-divide {
+  padding: 5rem;
+}
+
+.content-divide h1 {
+  color: var(--text-highlight);
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-bottom: 2px solid var(--text);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.foot-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5%;
+  width: 50vh;
+  min-width: 8rem;
+  height: 20vh;
+}
+/*# sourceMappingURL=page-style.css.map */

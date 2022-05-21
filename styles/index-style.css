@@ -1,214 +1,286 @@
-/* GenshinPlace Website CSS by LHBread */
+@-webkit-keyframes intro1 {
+  0% {
+    margin-top: 30vh;
+    width: 40%;
+  }
+  50% {
+    margin-top: 30vh;
+    width: 40%;
+  }
+  75% {
+    margin-top: 30vh;
+    width: 25%;
+  }
+  100% {
+    margin-top: 5vh;
+    width: 25%;
+  }
+}
+
+@keyframes intro1 {
+  0% {
+    margin-top: 30vh;
+    width: 40%;
+  }
+  50% {
+    margin-top: 30vh;
+    width: 40%;
+  }
+  75% {
+    margin-top: 30vh;
+    width: 25%;
+  }
+  100% {
+    margin-top: 5vh;
+    width: 25%;
+  }
+}
+
+@-webkit-keyframes intro2 {
+  0% {
+    margin-top: 20%;
+    opacity: 0;
+  }
+  75% {
+    margin-top: 20%;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes intro2 {
+  0% {
+    margin-top: 20%;
+    opacity: 0;
+  }
+  75% {
+    margin-top: 20%;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+
 @font-face {
-  font-family: Genshin-font;
+  font-family: genshin-font;
   src: url(../fonts/ja-jp.ttf);
 }
 
-/* Scroll bar */
-
-::-webkit-scrollbar {
-  width: 10px;
+.icons-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--accent2);
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--accent1);
-}
-
-/* Theme colors */
-
-:root.green {
-  --base: #558776;
-  --accent1: #EAE2B6;
-  --accent2: #A3A745;
-  --textBase: #000000;
-  --textHighlight: #24221d;
-}
-
-:root.light {
-  --base: #F0E9D2;
-  --accent1: #E6DDC4;
-  --accent2: #678983;
-  --textBase: #000000;
-  --textHighlight: #181D31;
-}
-
-:root.dark {
-  --base: #041C32;
-  --accent1: #04293A;
-  --accent2: #064663;
-  --textBase: #FFFFFF; 
-  --textHighlight: #ECB365;
-}
-
-:root.oled {
-  --base: #000000;
-  --accent1: #07252e;
-  --accent2: #204020;
-  --textBase: #e0e0e0;
-  --textHighlight: #c0c0c0;
-}
-
-/* Begin main page */
-
-html {
-  margin-left: 5%;
-  margin-right: 5%;
-  background-color: var(--base);
-  scroll-behavior: smooth;
-}
-
-a {
-  color: var(--textBase); 
+.icons-parent a {
   text-decoration: none;
 }
 
-img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-}
-
-/* Heading */
-
-header {
+.icon-container {
+  width: 16rem;
+  height: 16rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  max-width: 90rem;
-  min-width: 50rem;
-  margin:auto;
-  justify-content: space-between;
-  align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.header-child-1 {
-  min-height: 15%;
-  min-width: 25%;
-  padding-bottom: 1%;
-  align-items: bottom;
+.icon {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 0px;
+  -webkit-transition: margin-bottom 250ms ease-out;
+  transition: margin-bottom 250ms ease-out;
+  margin-top: auto;
+}
+
+.icon-container:hover > .icon {
+  margin-bottom: 2rem;
+}
+
+.icon-underline {
+  margin-top: .5rem;
+  height: 0.25rem;
+  background-color: var(--text);
+  border-radius: 2px;
+  width: 0px;
+  -webkit-transition: width 250ms ease-out;
+  transition: width 250ms ease-out;
+}
+
+.icon-container:hover > .icon-underline {
+  width: 8rem;
+}
+
+.icon-text {
+  color: transparent;
+  font-family: genshin-font;
+  -webkit-transition: color 250ms ease-out;
+  transition: color 250ms ease-out;
+}
+
+.icon-text p {
+  font-size: 1.5rem;
+  margin: 0px;
+  margin-top: 0.5em;
+}
+
+.icon-container:hover > .icon-text {
+  color: var(--text-highlight);
+}
+
+@font-face {
+  font-family: genshin-font;
+  src: url(../fonts/ja-jp.ttf);
+}
+
+:root.green {
+  --text: #24221D;
+  --text-highlight: #2f3d16;
+  --text-light: #A0B596;
+  --body-bg: #EAE2B6;
+  --body-accent: #A3A745;
+  --background: #558776;
+}
+
+:root.light {
+  --text: #000000;
+  --text-highlight: #181D31;
+  --text-light: #40535A;
+  --body-bg: #F0E9D2;
+  --body-accent: #678983;
+  --background: #E6DDC4;
+}
+
+:root.dark {
+  --text: #FFFFFF;
+  --text-highlight: #ECB365;
+  --text-light: #83A3B1;
+  --body-bg: #04364D;
+  --body-accent: #042940;
+  --background: #041C32;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+.master {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.logo {
+  width: 25%;
+  margin: 2rem;
+  -webkit-animation: intro1 4s;
+          animation: intro1 4s;
+}
+
+.body {
+  -webkit-animation: intro2 5.25s;
+          animation: intro2 5.25s;
+  width: 75%;
+  background-color: var(--body-bg);
+  border-radius: 2rem;
+  font-family: genshin-font;
 }
 
 .theme-btn {
-  padding: 0.5em;
-  width: 3em;
-  height: 3em;
-  border-radius: 50%;
-  cursor: pointer;
-  border: none;
+  text-align: right;
+  padding: 0.5rem;
 }
 
-.header-child-2 {
-  min-height: 15%;
-  min-width: 40%;
-}
-
-.header-child-3 {
-  display: flex; 
-  color: var(--textBase);
-  min-width: 25%;
-  min-height: 30%;
-  padding-bottom: 1%;
-  justify-content: end;
-  align-items: flex-end;
-}
-
-.header-child-3 input[type=text] {
-  font-family: Genshin-font;
-  font-size: 120%;
-  color: var(--textBase);
-  min-width: 5rem;
-  max-width:25rem;
+.theme-btn button {
+  width: 2rem;
   height: 2rem;
-  background-color: var(--accent1);
-  border: 2px solid;
-  border-radius: 0.5rem;
-  border-color: var(--textHighlight);
+  margin: 0.125rem;
+  border-radius: 1rem;
 }
 
-/* Body */
-
-.body-parent {
-  font-family: Genshin-font;
-  margin: auto;
-  min-height: 100%;
-  max-width: 90rem;
-  min-width: 50rem;
-  border-radius: 1.5rem;
-  background-color:var(--accent1);
+.page-title {
+  text-align: center;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0px;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  background-color: var(--body-accent);
+  -webkit-box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.125);
+          box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.125);
 }
 
-.title {
-    color: var(--textHighlight);
-    padding: 2rem;
-    font-size: 2rem;
-    text-align: center;
-    background-color: var(--accent2);
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, .125);
+.page-title h1 {
+  color: var(--text-highlight);
+  text-align: center;
+  margin-top: 0px;
 }
 
-.quick-nav {
-  width: fill;
+.content-divide {
+  padding: 5rem;
+}
+
+.content-divide h1 {
+  color: var(--text-highlight);
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-bottom: 2px solid var(--text);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.foot-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-right: 5rem;
-  margin-left: 5rem;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5%;
+  width: 50vh;
+  min-width: 8rem;
+  height: 20vh;
 }
-
-.quick-nav-item {
-  height: 8rem;
-  display:flex;
-  font-family: Genshin-font;
-  align-items: center;  
-  color: var(--textHighlight);
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;  
-}
-
-.quick-nav-item-image {
-    height: 100%;
-    width: fit-content;
-}
-
-.quick-nav-item-text {
-    height: 5rem;
-    width: 10rem;
-    display: flex;
-    align-items: center;
-    border-left: solid black 2px;
-    margin-left: 1rem;
-    padding-left: 1rem;
-}
-
-.subtitle {
-    color: var(--textHighlight);
-    text-align: center;
-    padding: 2rem;
-    padding-bottom: 0rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    font-size: 2rem;
-    text-align: center;
-    border-bottom: solid 2px var(--textBase)
-}
-
-footer {
-    display: flex;
-    justify-content: center;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-}
+/*# sourceMappingURL=index-style.css.map */

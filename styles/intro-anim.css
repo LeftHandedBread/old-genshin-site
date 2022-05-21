@@ -1,0 +1,68 @@
+@-webkit-keyframes intro1 {
+  0% {
+    margin-top: 30vh;
+    width: 40%;
+  }
+  50% {
+    margin-top: 30vh;
+    width: 40%;
+  }
+  75% {
+    margin-top: 30vh;
+    width: 25%;
+  }
+  100% {
+    margin-top: 5vh;
+    width: 25%;
+  }
+}
+
+@keyframes intro1 {
+  0% {
+    margin-top: 30vh;
+    width: 40%;
+  }
+  50% {
+    margin-top: 30vh;
+    width: 40%;
+  }
+  75% {
+    margin-top: 30vh;
+    width: 25%;
+  }
+  100% {
+    margin-top: 5vh;
+    width: 25%;
+  }
+}
+
+@-webkit-keyframes intro2 {
+  0% {
+    margin-top: 20%;
+    opacity: 0;
+  }
+  75% {
+    margin-top: 20%;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+
+@keyframes intro2 {
+  0% {
+    margin-top: 20%;
+    opacity: 0;
+  }
+  75% {
+    margin-top: 20%;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0%;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=intro-anim.css.map */
