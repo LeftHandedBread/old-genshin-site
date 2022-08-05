@@ -1,4 +1,4 @@
-<h1>The GenshinPlace Website</h1>
+<h1>The GenshinPlace Website (outdated)</h1>
 
 <h3>For new devs:</h3>
 
